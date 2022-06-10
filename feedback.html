@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!Icons in nav-bar are made by Freepik, Gregor Cresnar & Those Icons from www.flaticon.com>
+<!Use Google Chrome to get better browse experience>
+<html>
+<head>
+<!--
+   Nova City Website	
+   Date:   2019 - 04 - 20
+   
+   Filename: feedback.html
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="images/icon.ico" />
+<title>Nova City Website</title>
+<link href="css/mc_navbar.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_feb.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_reset.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script type="text/javascript">
+/*js for footer about*/
+function about() {
+  alert("Nova City Website. 2019 DIT4107 Assignment");
+}
+
+/*js for footer website developer*/
+function developer() {
+  alert("Nova City Website. Develop by Chan Wai Pong James 180609303");
+}
+
+/*js for logout button*/
+function logout() { 
+  alert("Logout Success. Bye!");
+  window.location="index.html";
+}
+</script>
+
+<body>
+<body background="images/feb.png">
+
+<nav class="fixed-nav-bar">
+  <div id="menu" class="menu">
+    <a></a>
+    <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+     <ul class="menu-items">
+      <li><a href="inpage.html" target=""><img src="images/homep.png" class="ic"></a></li>
+	  <li><a href="download.html" target=""><img src="images/downloadp.png" class="ic"></a></li>
+	  <li><a href="gallery.html" target=""><img src="images/galleryp.png" class="ic"></a></li>
+	  <li><a href="aboutus.html" target=""><img src="images/aboutusp.png" class="ic"></a></li>
+	  <li><a href="feedback.html" target=""><img src="images/feedbackp.png" class="ic"></a></li>
+	  <li><a href='javascript: logout()'><img src="images/logoutp.png" class="ic"></a></li>
+  </ul>
+  </div>
+</nav>
+
+<div class="content">
+	<h1>Your Feedback</h1>
+	<div class="main">
+	<form class="box" action="inpage.html" method="post">
+			<h5>Your Name:</h5>
+				<input type="text" name="flname" id="name" placeholder="Enter Your Name" required>
+			<h5>Email:</h5>
+				<input type="text" name="email" id="email" placeholder="minecraft@mc.com" required>
+			<h5>Your Review: <span>( Tips and Guidelines )</span></h5>	
+				<textarea placeholder="Type Here" required=""></textarea>
+		<h5>Website Design: </h5>
+			<div class="radiob">
+					<div class="radiobut">								
+						<label class="container">Very Good<input type="radio" checked="checked" name="radio1"><span class="checkmark"></span></label>
+						<label class="container">Good<input type="radio" name="radio1"><span class="checkmark"></span></label>
+						<label class="container">Fair<input type="radio" name="radio1"><span class="checkmark"></span></label>
+						<label class="container">Poor<input type="radio" name="radio1"><span class="checkmark"></span></label>
+						<label class="container">Very Poor<input type="radio" name="radio1"><span class="checkmark"></span></label>	
+					</div>
+			</div>
+		<h5>Information Provide</h5>
+			<div class="radio-btns">
+					<div class="radiobut">								
+						<label class="container">Very Good<input type="radio" checked="checked" name="radio2"><span class="checkmark"></span></label>
+						<label class="container">Good<input type="radio" name="radio2"><span class="checkmark"></span></label>
+						<label class="container">Fair<input type="radio" name="radio2"><span class="checkmark"></span></label>
+						<label class="container">Poor<input type="radio" name="radio2"><span class="checkmark"></span></label>
+						<label class="container">Very Poor<input type="radio" name="radio2"><span class="checkmark"></span></label>	
+					</div>
+			</div>
+		<h5>Our Support</h5>
+			<div class="radio-btns">
+					<div class="radiobut">								
+						<label class="container">Very Good<input type="radio" checked="checked" name="radio3"><span class="checkmark"></span></label>
+						<label class="container">Good<input type="radio"  name="radio3"><span class="checkmark"></span></label>
+						<label class="container">Fair<input type="radio" name="radio3"><span class="checkmark"></span></label>
+						<label class="container">Poor<input type="radio" name="radio3"><span class="checkmark"></span></label>
+						<label class="container">Very Poor<input type="radio" name="radio3"><span class="checkmark"></span></label>	
+					</div>
+			</div>
+		<h5>Overall Satisfaction</h5>
+			<div class="radio-btns">
+					<div class="radiobut">								
+						<label class="container">Very Good<input type="radio" checked="checked" name="radio4"><span class="checkmark"></span></label>
+						<label class="container">Good<input type="radio" name="radio4"><span class="checkmark"></span></label>
+						<label class="container">Fair<input type="radio" name="radio4"><span class="checkmark"></span></label>
+						<label class="container">Poor<input type="radio" name="radio4"><span class="checkmark"></span></label>
+						<label class="container">Very Poor<input type="radio" name="radio4"><span class="checkmark"></span></label>	
+					</div>
+			</div>
+			<h5>Is there anything you would like to tell us?</h5>	
+				<textarea placeholder="Type Here"></textarea>
+				<input type="submit" onClick="alert('Thank You! We will keep improve our website with your feedback!')" value="Send Feedback">
+
+	</form>
+  </div>
+	
+	<footer class="dfooter">
+		<a href="https://www.facebook.com/"><img src="images/s1.png" align="left" class="s1"></a> <a href="https://www.google.com/"><img src="images/s2.png" align="left" class="s2"></a> Nova City Website By James Chan<span> <a href='javascript: about()'>About</a> <a href='javascript: developer()'>Developers</a> <a href="#">Help</a> </span> 
+    </footer>
+	
+</body>
+</html>

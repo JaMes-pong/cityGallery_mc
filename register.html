@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!Use Google Chrome to get better browse experience>
+<html>
+<head>
+<!--
+   Nova City Website		
+   Date:   2019 - 04 - 20
+   
+   Filename: register.html
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="images/icon.ico" />
+<title>Nova City Website</title>
+<link rel="stylesheet" href="css/mc_form.css">
+</head>
+
+<script type="text/javascript">
+/*js for register validation*/ 
+  function checkForm(form)
+  {
+    if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters and numbers!");
+      form.username.focus();
+      return false;
+    }
+    if(form.password.value != "" && form.password.value == form.password2.value) {
+      if(!checkPassword(form.password.value)) {
+        alert("The password you have entered is not valid!");
+        form.password.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.password.focus();
+      return false;
+    }
+    return true;
+  }
+</script>
+
+<body>
+
+<form class="box" action="inpage.html" method="post" onsubmit="return checkForm(this);">
+  <h1>Register</h1>
+  <input type="text" name="username" id="name" placeholder="Enter Username" required>
+  <input type="password" name="password" id="password" placeholder="Password"  required>
+  <input type="password" name="password2" id="password2" placeholder="Repeat Password" required>
+  <input type="text" name="email" id="email" placeholder="Email" required>
+  <input type="submit" name="reg" value="Register"> 
+  <input type="reset" name="reset" value="Reset">
+  <p><a class="lr" href="index.html" target="">Back To Homepage</a></p>
+  <p><a class="lr" href="login.html" target="">Login NOW</a></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!Icons in nav-bar are made by Freepik, Gregor Cresnar & Those Icons from www.flaticon.com>
+<!Use Google Chrome to get better browse experience>
+<html>
+<head>
+<!--
+   Nova City Website		
+   Date:   2019 - 04 - 20
+   
+   Filename: inpage.html
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="images/icon.ico" />
+<title>Nova City Website</title>
+<link href="css/mc_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_navbar.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_reset.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script type="text/javascript">
+/*js for footer about*/
+function about() {
+  alert("Nova City Website. 2019 DIT4107 Assignment");
+}
+
+/*js for footer website developer*/
+function developer() {
+  alert("Nova City Website. Develop by Chan Wai Pong James 180609303");
+}
+
+/*js for logout button*/
+function logout() { 
+  alert("Logout Success. Bye!");
+  window.location="index.html";
+}
+</script>
+
+<body>
+<body background="images/bg.png">
+<nav class="fixed-nav-bar">
+  <div id="menu" class="menu">
+    <a></a>
+    <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+    <ul class="menu-items">
+      <li><a href="inpage.html" target=""><img src="images/homep.png" class="ic"></a></li>
+	  <li><a href="download.html" target=""><img src="images/downloadp.png" class="ic"></a></li>
+	  <li><a href="gallery.html" target=""><img src="images/galleryp.png" class="ic"></a></li>
+	  <li><a href="aboutus.html" target=""><img src="images/aboutusp.png" class="ic"></a></li>
+	  <li><a href="feedback.html" target=""><img src="images/feedbackp.png" class="ic"></a></li>
+	  <li><a href='javascript: logout()'><img src="images/logoutp.png" class="ic"></a></li>
+
+  </ul>
+  </div>
+</nav>
+
+	<aside>
+	<p>&nbsp;</p>
+	<h2 class="boxmsg">What's new??</h2>
+	<p class="boxmsg" id="update">2019/04/24:update Login form.</p>
+	<p class="boxmsg" id="update">2019/04/24:update Register form.</p>
+	<p class="boxmsg" id="update">2019/04/25:update minecraft structure file of Colmar City.</p>
+	<p class="boxmsg" id="update">2019/04/26:update minecraft structure file of Zephyr City.</p>
+	<p class="boxmsg" id="update">2019/04/27:update Gallery.</p>
+	<p class="boxmsg" id="update">2019/04/28:update ALL command for version 1.14.</p>
+	</aside>
+	
+<section class="article">
+  <h1 id="main">Welcome - James75</h1>
+  <p></p>
+  <h2>Welcome BACK!!!!</h2>
+  <p>You can browse this website through the menu above.<p>
+  
+  <div class="container">
+		<a href=""><img src="images/aboutusgrid.png" alt="rainbow2" class="image"></a>
+	</div>
+	
+  <br>
+  <h2 class="news">Newsletter</h2>
+  <p class="news"> We will send any update about this website to you.</p>
+  <form class="box" action="inpage.html" method="post">
+  <input type="text" class="news" placeholder="Enter your email"/>
+  <input type="reset" name="reset" onClick="alert('We receive your email ^o^!! Thank You')" value="Submit">
+  </form>
+</section>
+
+	<footer>
+		<a href="https://www.facebook.com/"><img src="images/s1.png" align="left" class="s1"></a> <a href="https://www.google.com/"><img src="images/s2.png" align="left" class="s2"></a> Nova City Website By James Chan<span> <a href='javascript: about()'>About</a> <a href='javascript: developer()'>Developers</a> <a href="#">Help</a> </span> 
+    </footer>
+	
+</body>
+</html>

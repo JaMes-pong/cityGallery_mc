@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*
+   Colmar & Zephyr City Website
+   
+   Filename: mc_reset.css
+
+   Date:    2019 - 04 - 20
+   
+
+*/
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

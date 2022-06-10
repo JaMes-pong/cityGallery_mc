@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!Icons in nav-bar are made by Freepik, Gregor Cresnar & Those Icons from www.flaticon.com>
+<!Use Google Chrome to get better browse experience>
+<html>
+<head>
+<!--
+   Nova City Website		
+   Date:   2019 - 04 - 20
+   
+   Filename: gallery.html
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="images/icon.ico" />
+<title>Nova City Website</title>
+<link href="css/mc_layout.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_navbar.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_reset.css" rel="stylesheet" type="text/css" />
+<link href="css/mc_gallery.css" rel="stylesheet" type="text/css" />
+</head>
+
+<script type="text/javascript">
+/*reference by https://www.w3schools.com/howto/howto_js_image_grid.asp */
+/*js of grid*/
+var elements = document.getElementsByClassName("column");
+var i;
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%"; 
+    elements[i].style.flex = "100%";
+  }
+}
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  
+    elements[i].style.flex = "50%";
+  }
+}
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%"; 
+    elements[i].style.flex = "25%";
+  }
+}
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+/*js for footer about*/
+function about() {
+  alert("Nova City Website. 2019 DIT4107 Assignment");
+}
+
+/*js for footer website developer*/
+function developer() {
+  alert("Nova City Website. Develop by Chan Wai Pong James 180609303");
+}
+
+/*js for logout button*/
+function logout() { 
+  alert("Logout Success. Bye!");
+  window.location="index.html";
+}
+</script>
+
+<body>
+<nav class="fixed-nav-bar">
+  <div id="menu" class="menu">
+    <a></a>
+    <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
+     <ul class="menu-items">
+      <li><a href="inpage.html" target=""><img src="images/homep.png" class="ic"></a></li>
+	  <li><a href="download.html" target=""><img src="images/downloadp.png" class="ic"></a></li>
+	  <li><a href="gallery.html" target=""><img src="images/galleryp.png" class="ic"></a></li>
+	  <li><a href="aboutus.html" target=""><img src="images/aboutusp.png" class="ic"></a></li>
+	  <li><a href="feedback.html" target=""><img src="images/feedbackp.png" class="ic"></a></li>
+	  <li><a href='javascript: logout()'><img src="images/logoutp.png" class="ic"></a></li>
+  </ul>
+  </div>
+</nav>
+
+<p>&nbsp;</p>
+
+<div class="header" id="myHeader">
+  <h2>Colmar & Zephyr City Gallery</h2>
+  <p class="cc">-Click the buttons to change the grid view</p>
+  <p class="cc">-Click the photo to watch with full screen</p>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<div class="row"> 
+  <div class="column">
+	<a target="_blank" href="images/2018-08-05_16.52.44.png"><img src="images/2018-08-05_16.52.44.png" style="width:100%"></a>
+	<div class="des">Riverside Night View [Colmar]</div>
+	<a target="_blank" href="images/2018-06-28_10.00.46.png"><img src="images/2018-06-28_10.00.46.png" style="width:100%"></a>
+	<div class="des">Riverside [Colmar]</div>
+	<a target="_blank" href="images/2018-08-05_16.56.44.png"><img src="images/2018-08-05_16.56.44.png" style="width:100%"></a>
+	<div class="des">Hyde Natural Museum [Colmar]</div>
+	<a target="_blank" href="images/2018-08-05_16.58.55.png"><img src="images/2018-08-05_16.58.55.png" style="width:100%"></a>
+	<div class="des">City Night View [Colmar]</div>
+	<a target="_blank" href="images/2018-08-05_16.59.27.png"><img src="images/2018-08-05_16.59.27.png" style="width:100%"></a>
+	<div class="des">Brendon Palace [Colmar]</div>
+	<a target="_blank" href="images/2019-04-24_20.35.18.png"><img src="images/2019-04-24_20.35.18.png" style="width:100%"></a>
+	<div class="des">Ministry of National Defense [Colmar]</div>
+  </div>
+  <div class="column">
+    <a target="_blank" href="images/2019-04-27_12.31.36.png"><img src="images/2019-04-27_12.31.36.png" style="width:100%"></a>
+	<div class="des">Giselle Park [Colmar]</div>
+	<a target="_blank" href="images/2019-04-27_12.33.15.png"><img src="images/2019-04-27_12.33.15.png" style="width:100%"></a>
+	<div class="des">Federal Station [Colmar]</div>
+	<a target="_blank" href="images/2019-04-27_12.33.46.png"><img src="images/2019-04-27_12.33.46.png" style="width:100%"></a>
+	<div class="des">J + B Shopping Mall [Colmar]</div>
+	<a target="_blank" href="images/2019-04-27_12.33.58.png"><img src="images/2019-04-27_12.33.58.png" style="width:100%"></a>
+	<div class="des">City Night View [Colmar]</div>
+	<a target="_blank" href="images/2019-04-24_20.44.04.png"><img src="images/2019-04-24_20.44.04.png" style="width:100%"></a>
+	<div class="des">Coventry Railway Station [Colmar]</div>
+	<a target="_blank" href="images/2019-04-24_20.35.24.png"><img src="images/2019-04-24_20.35.24.png" style="width:100%"></a>
+	<div class="des">Central Government Office [Colmar]</div>
+  </div>
+  <div class="column">
+    <a target="_blank" href="images/2019-04-24_10.35.35.png"><img src="images/2019-04-24_10.35.35.png" style="width:100%"></a>
+	<div class="des">City View [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.22.45.png"><img src="images/2019-04-27_12.22.45.png" style="width:100%"></a>
+	<div class="des">City View [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.23.04.png"><img src="images/2019-04-27_12.23.04.png" style="width:100%"></a>
+	<div class="des">Jat Lam Waterfront Promenade [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.24.27.png"><img src="images/2019-04-27_12.24.27.png" style="width:100%"></a>
+	<div class="des">Troops City Road [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.24.45.png"><img src="images/2019-04-27_12.24.45.png" style="width:100%"></a>
+	<div class="des">Apartment [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.26.35.png"><img src="images/2019-04-27_12.26.35.png" style="width:100%"></a>
+	<div class="des">Hill [Zephyr]</div>
+  </div>  
+  <div class="column">
+    <a target="_blank" href="images/2019-04-27_12.27.21.png"><img src="images/2019-04-27_12.27.21.png" style="width:100%"></a>
+	<div class="des">Hill Park [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.27.47.png"><img src="images/2019-04-27_12.27.47.png" style="width:100%"></a>
+	<div class="des">City Night View [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.28.36.png"><img src="images/2019-04-27_12.28.36.png" style="width:100%"></a>
+	<div class="des">City Hillside View [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.28.58.png"><img src="images/2019-04-27_12.28.58.png" style="width:100%"></a>
+	<div class="des">Fu Wong Toi Tunnel [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.29.29.png"><img src="images/2019-04-27_12.29.29.png" style="width:100%"></a>
+	<div class="des">Fu Wong Toi Station [Zephyr]</div>
+	<a target="_blank" href="images/2019-04-27_12.30.04.png"><img src="images/2019-04-27_12.30.04.png" style="width:100%"></a>
+	<div class="des">Fu Wong Toi Station [Zephyr]</div>
+  </div>
+</div>
+
+<footer>
+	<a href="https://www.facebook.com/"><img src="images/s1.png" align="left" class="s1"></a> <a href="https://www.google.com/"><img src="images/s2.png" align="left" class="s2"></a> Nova City Website By James Chan<span> <a href='javascript: about()'>About</a> <a href='javascript: developer()'>Developers</a> <a href="#">Help</a> </span> 
+</footer>
+
+</body>
+</html>

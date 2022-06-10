@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Use Google Chrome to get better browse experience-->
+<html>
+<head>
+<!--
+   Nova City Website		
+   Date:   2019 - 04 - 20
+   
+   Filename: login.html
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" type="image/x-icon" href="images/icon.ico" />
+<title>Nova City Website</title>
+<link rel="stylesheet" href="css/mc_form.css">
+</head>
+
+<script type="text/javascript">
+/*js for login validation*/ 
+    function validateForm() {
+        var user = document.loginform.username.value;
+        var pw = document.loginform.password.value;
+        var username = "James75"; 
+        var password = "180609303";
+        if ((user == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+  }
+  
+  function log() {
+  alert("Username = James75 | Password = 180609303");
+}
+</script>
+
+<body>
+<form name="loginform" class="box" action="inpage.html" method="post" onSubmit="validateForm();">
+  <h1>Login</h1>
+  <input type="text" name="username" id="loginname" placeholder="Enter Username" required>
+  <input type="password" name="password" id="password" placeholder="Password" required>
+  <input type="submit" name="login" value="Login">
+  <input type="reset" name="reset" value="Reset">
+  <p><a class="lr" href='javascript: log()'>**About the login detail</a></p>
+  <p><a class="lr" href="index.html" target="">Back To Homepage</a></p>
+  <p><a class="lr" href="register.html" target="">Register NOW</a></p>
+</form>
+
+
+</body>
+</html>
